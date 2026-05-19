@@ -1,0 +1,38 @@
+{
+  "name": "flip-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "flip": "tsx flip.ts",
+    "auto": "tsx auto-flip.ts",
+    "scan": "tsx scan.ts",
+    "hunter": "tsx hunter.ts",
+    "hunter:dry": "cross-env DRY_RUN=1 tsx hunter.ts",
+    "recover": "tsx recover.ts",
+    "once": "tsx flip-once.ts",
+    "sell": "tsx sell.ts",
+    "close-vaa": "tsx close-vaa.ts",
+    "sim-redeem": "tsx simulate-redeem.ts",
+    "redeem": "tsx redeem.ts",
+    "scan-vault": "tsx scan-vault.ts",
+    "scan-thin": "tsx scan-thin-pools.ts",
+    "sell-jup": "tsx sell-jupiter.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.1",
+    "@pythnetwork/hermes-client": "^2.1.0",
+    "@pythnetwork/pyth-solana-receiver": "^0.13.0",
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.95.3",
+    "@switchboard-xyz/on-demand": "^1.2.42",
+    "bs58": "^6.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "rpc-websockets": "^7.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
